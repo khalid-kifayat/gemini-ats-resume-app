@@ -3,4 +3,4 @@ google-generativeai
 python-dotenv
 pdf2image
 PyPDF2
-poppler-utils
+python-dateutil

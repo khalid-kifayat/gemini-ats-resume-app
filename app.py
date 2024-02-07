@@ -45,7 +45,7 @@ def input_pdf_setup(uploaded_file):
 
 st.set_page_config(page_title="Resume Expert")
 
-st.header("JD vs RESUME Analyzer")
+st.header("JD vs RESUME Analyzer - 🤖 Google Gemini Pro Model")
 st.subheader('This Application helps you in your Resume Review and Percentage Match against keywords ')
 input_text = st.text_input("Job Description: ", key="input")
 uploaded_file = st.file_uploader("Upload your Resume(PDF)...", type=["pdf"])
@@ -90,3 +90,20 @@ elif submit4:
 
 st.markdown("---")
 st.caption("using Google Gemini Pro, Python-Langchain Application created by Khalid kifayat :sunglasses:")
+
+hide_streamlit_style = """
+            <style>
+
+            [data-testid="stToolbar"] {visibility: hidden;}
+            .reportview-container {
+            margin-top: -2em;
+        }
+            #MainMenu {visibility: hidden;}
+            .stDeployButton {display:none;}
+            #stDecoration {display:none;}
+            footer {visibility: hidden;}
+            div.embeddedAppMetaInfoBar_container__DxxL1 {visibility: hidden;}
+            header {visibility: hidden;}
+            </style>
+            """
+st.markdown(hide_streamlit_style, unsafe_allow_html=True) 

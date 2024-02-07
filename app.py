@@ -45,7 +45,8 @@ def input_pdf_setup(uploaded_file):
 
 st.set_page_config(page_title="Resume Expert")
 
-st.header("JD vs RESUME Analyzer - 🤖 Google Gemini Pro Model")
+st.header("JD vs RESUME Analyzer")
+st.subheader('🤖 Google Gemini-Pro LLM Model')
 st.subheader('This Application helps you in your Resume Review and Percentage Match against keywords ')
 input_text = st.text_input("Job Description: ", key="input")
 uploaded_file = st.file_uploader("Upload your Resume(PDF)...", type=["pdf"])

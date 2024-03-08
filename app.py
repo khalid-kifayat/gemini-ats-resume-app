@@ -88,9 +88,25 @@ elif submit4:
     else:
         st.write("Please upload a PDF file to proceed.")
 
+# Footer
+st.markdown("""
+<style>
+.footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: #000000; /* Black background color */
+    color: #ffffff; /* White text color */
+    text-align: center;
+    padding: 10px;
+}
+</style>
+""", unsafe_allow_html=True)
 
 st.markdown("---")
-st.caption("using Google Gemini Pro, Python-Langchain Application created by Khalid kifayat :sunglasses:")
+st.markdown('<p class="footer">Generative AI : Python-Langchain Application <br>  Created by Khalid Kifayat <br> (www.beingkhalid.com / www.builtautomations.com)</p>', unsafe_allow_html=True)
+
 
 hide_streamlit_style = """
             <style>
